@@ -4,7 +4,7 @@
   tasks:
     - name: Login to Docker Hub
       docker_login:
-        username: c1t1d0s7
+        username: numerok
         password: "{{ lookup('env', 'TOKEN') }}"
         reauthorize: yes
 
@@ -12,7 +12,7 @@
       docker_image:
         build:
           path: /home/vagrant/java-hello-world
-        name: c1t1d0s7/java-hello
+        name: numerok/java-hello
         tag: "{{ lookup('env', 'BUILD_NUMBER') }}"
         push: yes
         source: build
