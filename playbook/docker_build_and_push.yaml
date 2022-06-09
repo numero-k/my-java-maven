@@ -1,4 +1,4 @@
-- hosts: ansible_host
+- hosts: docker_host
   gather_facts: no
 
   tasks:
