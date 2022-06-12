@@ -11,7 +11,7 @@
     - name: Build and Push Image
       docker_image:
         build:
-          path: /home/vagrant/java-hello-world
+          path: "/home/`whoami`/java-hello-world"
         name: numerok/java-hello
         tag: "{{ lookup('env', 'BUILD_NUMBER') }}"
         push: yes
